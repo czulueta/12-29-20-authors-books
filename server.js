@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 const morgan = require("morgan")
 
 app.use(express.json())
-app.use(mogan("dev"))
+app.use(morgan("dev"))
 
 mongoose.connect("mongodb://localhost:27017/db12-29-20-authors-books",
     {
